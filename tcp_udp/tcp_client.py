@@ -25,7 +25,6 @@ while True:
 data = b''.join(buffer)
 
 s.close()
-print(data)
 
 header, body = data.split(b'\r\n\r\n', 1)
 print(header.decode('utf-8'))
